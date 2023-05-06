@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     var res_field = document.querySelector('.calc__result-field');
-    var btn_num = document.querySelectorAll('.js--add-res');
+    var btn_num = document.querySelectorAll('.js--btn-add-res');
     var btn_reset = document.querySelector('.js--btn-reset');
     var btn_calc = document.querySelector('.js--btn-calc');
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btn_reset.addEventListener('click', function(e) {
         e.preventDefault();
-        res_field.value += '';
+        res_field.value = '';
     })
 
     btn_calc.addEventListener('click', function(e) {
