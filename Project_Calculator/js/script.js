@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btn_calc.addEventListener('click', function(e) {
         e.preventDefault();
-        res_field.value += eval(res_field.value);
+        res_field.value = eval(res_field.value);
     })
     
 })
